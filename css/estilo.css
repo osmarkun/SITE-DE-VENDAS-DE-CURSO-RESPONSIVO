@@ -1,0 +1,500 @@
+/* CSS RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+
+}
+
+/* 1 ADICIONAMOS UMA FONT  */
+body {
+
+    font-family: 'Nunito Sans', sans-serif;
+    /* border: 1px solid red; */
+}
+
+/* 2 CONFIGURAR O header  */
+
+header {
+
+    height: 60px;
+    /*altura do header*/
+    color: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(7, 4, 52, 1) 0%, rgba(9, 9, 121, 1) 12%, rgba(0, 212, 255, 1) 100%);
+    /* border: 1px solid red; */
+}
+
+/* 3 CONFIGURAR A CLASSE CONTAINER  */
+.container {
+
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 15px;
+    /*esse padding vai ser apenas para moba*/
+    /*mudar depois para moba*/
+
+}
+
+/* formatar o logo  */
+header .logo {
+    /* border: 1px solid red; */
+    max-width: 150px;
+    height: 50px;
+    max-height: 80px;
+    margin-bottom: 15px;
+
+}
+
+/* 4 formatar a classe container dentro do header  */
+
+header .container {
+    /* border: 1px solid red; */
+    display: flex;
+
+    /*ativamos o display flex*/
+    align-items: center;
+    /*alinhamos verticalmente os intens no centro*/
+    justify-content: space-between;
+    /*adicionamos horizonalmente espaço entre os conteudos*/
+    height: 100%;
+
+}
+
+/* ---------------------------------------------------- */
+/* 15 CENTRALIZANDO logo NO MOBA  */
+
+header .container {
+
+
+    justify-content: center;
+    /*centtrakizar o logo (apenas para moba)*/
+
+}
+
+/* 14 OCUTANDO O NAV EM APARELHOS MOBA  */
+
+header nav {
+
+    display: none;
+}
+
+/* ------------------------------------------------------------ */
+
+/* 5 FORMATAR AS LI  */
+
+header li {
+    /* border: 1px solid red; */
+    display: inline-block;
+    /*deixamos o conteudo na horizontal*/
+    margin-left: 15px;
+    /*margem entre os conteudos*/
+    font-size: 14px;
+    margin-top: 15px;
+
+}
+
+/* ---------------------------------------------------------------------- */
+
+/*  CONFIGURAR AREA DO MAIN  */
+
+/* 6 configurar a classe hero  */
+main.hero {
+    border-bottom: 3px solid rgb(53, 80, 147);
+    height: 500px;
+    /*TAMANHO DO CONTEUDO PRINCIPAL*/
+    background: url("../img/fundo-conteudo.png");
+    /*fundo do conteudo principal*/
+    background-size: cover;
+    /*redimensiona o fundo corretamente*/
+
+
+}
+
+/* 7 configurar e alinhar container no main  */
+
+main.hero .container {
+
+    height: 100%;
+    /**definir uma altura*/
+    display: flex;
+    /*mudar o display para alinhar*/
+    align-items: center;
+    /* alinhar os itens verticalmente no centro*/
+
+
+}
+
+/* 8 configurar a classe hero-content  */
+
+main.hero .hero-content {
+
+    color: #fff;
+    /*adicionar cor de texto branca*/
+
+}
+
+/* 9  configurar o paragrafo dentro do hero-content */
+main.hero .hero-content p {
+
+    margin: 8px 0;
+    /*adicionar 8 de altura e 0 lateral*/
+    width: 300px;
+    /*quebrar em duas linhas o paragrafo*/
+    font-size: 14px;
+    /* definir fonte do paragrafo*/
+
+}
+
+/* 10 configurar h2 do conteudo principal  */
+
+main.hero .hero-content h2 {
+
+
+    font-size: 32px;
+    /*adicionar font do tirulo*/
+    margin: 0;
+    /*tirar margem do h2*/
+
+
+}
+
+
+/* CONFIGURAR AREA DO PRODUTO  */
+
+/* 11 configurar aside-produtcs  */
+
+aside.products {
+    background: linear-gradient(90deg, rgba(7, 4, 52, 1) 0%, rgba(9, 9, 121, 1) 12%, rgba(0, 212, 255, 1) 100%);
+    /* adicionar fundo  */
+    padding-top: 2px;
+}
+
+/* 12 configurar container do aside  */
+
+aside.products .container {
+
+
+    display: flex;
+    /*colocar display flex para alinhar*/
+    flex-direction: column;
+    /*vamos usar o column para deixar colunas em dispositivos mobas*/
+
+}
+
+/* 13 configurar conteudo dentro do container  */
+
+aside.products .product {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 40px 0;
+    /*adicionado padding na altura do container*/
+    background-color: linear-gradient(90deg, rgba(7, 4, 52, 1) 0%, rgba(9, 9, 121, 1) 12%, rgba(0, 212, 255, 1) 100%);
+    height: 350px;
+    /*adicionar altura*/
+    width: 65%;
+    /*adicionar largura (essa largura é apenas para moba)*/
+    margin-bottom: 20px;
+    /*adicionar margem botom (apenas para moba)*/
+    margin: 20px auto;
+    margin-bottom: 20px;
+
+}
+
+/* configurando card  */
+
+section.card {
+
+    font-family: 'Poppins', sans-serif;
+    /*adicionamos a fonte poppins na classe*/
+    width: 100%;
+    /*largura de 100% */
+    display: flex;
+    /*ativar o display flex*/
+    justify-items: center;
+    /*alinhar horizontalmente os itens*/
+    align-items: center;
+    /*alinhar vertucalmente os itens*/
+    flex-direction: column;
+    /* deixar o conteudo dentro da classe em coluna*/
+    text-align: center;
+    /*alinhar o texto no centro*/
+    padding: 1rem 1.5rem;
+    /* cada rem vale 16px*/
+    background-color: #fff;
+    border-radius: 8px;
+    /*arredondar as bordas*/
+
+
+}
+
+section.card .icon {
+
+    margin-top: 20px;
+    /*adcionar margem no top da versao moba*/
+    height: 150px;
+    /*ADICIONAMOS ALTURA NA CLASSE ICON PARA ALINHAR A IMG*/
+    width: 150px;
+    /*largura da img*/
+    display: flex;
+    /*display flex*/
+    justify-items: center;
+    /*alinhando*/
+
+
+
+}
+
+section.card .icon img {
+
+    width: 100%;/*definimos a largura da img com 150px*/
+    height: 100%;/*definimos a altura da img com 150px*/
+}
+
+/* configurar h3  */
+section.card h3 {
+
+    font-size: 100%;
+    margin: 16px 0;
+    /*adicionamos uma margem top de 16px*/
+}
+/* comfigurando o span -- */
+section.card span {
+
+    max-width: 240px;
+    font-weight: 300;
+    font-size: 80%;
+    margin-bottom: 16px;
+
+}
+
+/* configurar os button  */
+
+section.card button {
+    width: 150px;
+    border: none;
+    border-radius: 38px;
+    font-size: 88%;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+
+
+}
+
+/* adicionando fundo nos botes  */
+
+section.card.contact button {
+
+    background: linear-gradient(to right, #9f66ff, #dfc8ff);
+
+
+
+}
+
+section.card.shop button {
+
+
+    background: linear-gradient(to right, #3e8aff, #bbdeff);
+}
+
+section.card.about button {
+
+
+    background: linear-gradient(to right, #fe5f8f, #ffc7d9);
+
+}
+
+/* adicionando sombra no card */
+
+section.card.contact {
+
+    box-shadow: 20px 20px 100px -30px #afd6ff;
+}
+
+main.cards section.card.shop {
+
+    box-shadow: 20px 20px 50px -30px #afd6ff;
+}
+
+
+main.cards section.card.about {
+
+    box-shadow: 20px 20px 50px -30px #ffc1d5;
+}
+
+
+
+/* CONFIGURAR RODAPE  */
+
+/* 14 configurar classe foot  */
+
+footer.foot {
+
+    background: cornsilk;
+    /* adicionar fundo  */
+}
+
+/* 15 configurar classe .container do footer  (centralizado para moba) */
+
+footer.foot .container {
+
+    height: 30px;
+    /*adicionamos altura do rodape*/
+    display: flex;
+    /*ativamos display flex*/
+    align-content: center;
+    /*centraçizamos o conteudo verticalmente*/
+    justify-content: center;
+    /*centralizamos horizontalmente*/
+
+}
+
+/* 16 configurar paragrafo  */
+footer p {
+
+    font-size: 15px;
+    /*adicionamos tamamho da fonte*/
+}
+
+
+
+/* final  configurar layouts  */
+
+/* 1 configurar layout menor  */
+@media screen and (min-width: 576px) {
+
+    .container {
+
+        max-width: 540px;
+        /*adicionar o limeteda largura da tela*/
+        padding: 0;
+        /*acima de 540 nao queremos padding*/
+
+    }
+
+
+    /*descentralizar logo*/
+    header .container {
+
+        justify-content: space-between;
+        /*queremos os itens no canto*/
+
+    }
+
+    /*mostrar nav em telas maiores */
+    header nav {
+
+        display: block;
+        /*mostrar o nav*/
+
+    }
+
+
+    /* adicionar espaço entre os itens */
+
+    aside .container {
+        
+        justify-content: space-between;
+        /*adicionamos espaço entre os conteudos*/
+        /* flex-direction: column;  */
+
+
+    }
+
+    /* posicao dos produtos  */
+    aside.products .container {
+
+        flex-direction: row;
+        /*direcao dos produtos em linha*/
+    }
+
+    /*redimensionar a largura da classe product*/
+    aside.products .product {
+        height: 250px;
+        /*redimensionar a altura*/
+        width: 31%;
+        margin: 0;
+        /*zerar margim*/
+        margin-bottom: 15px;
+        margin-top: 15px;
+        /*adiconar margem em baixo*/
+
+
+    }
+
+    /* configurar cards  */
+
+
+    section.card {
+
+        width:80% ;
+    }
+
+
+
+        section.card .icon {
+
+            margin-top: 16px;
+            /*adcionar margem no top da versao moba*/
+            height: 64px;
+            /*ADICIONAMOS ALTURA NA CLASSE ICON PARA ALINHAR A IMG*/
+            width: 64px;
+
+
+        }
+
+
+        /* configurar rodape no canto  */
+
+        footer.foot .container {
+
+            justify-content: start;
+            align-content: center;
+            /*centraçizamos o conteudo verticalmente*/
+
+
+        }
+
+
+
+    }
+
+    /*configuarar layout tela hd*/
+    @media screen and (min-width: 768px) {
+
+        .container {
+
+            max-width: 720px;
+            /*adicionar o limeteda largura da tela*/
+
+        }
+
+    }
+
+    /* configurar tela abaixo do full hd  */
+    @media screen and (min-width: 992px) {
+
+        .container {
+
+            max-width: 960px;
+            /*adicionar o limeteda largura da tela*/
+
+        }
+
+    }
+
+    /* Configurar tela full hd  */
+
+    @media screen and (min-width: 1200px) {
+
+        .container {
+
+            max-width: 1140px;
+            /*adicionar o limeteda largura da tela*/
+
+        }
+
+    }

@@ -1,0 +1,49 @@
+
+	  CRIAR O LAYOUT DO SITE :
+		
+		- DEFINIR UM HEADER = feito
+		- DEFINIR MAIN      = feito
+		- DEFINIR ASENT     = feito
+		- DEFINIR FOOTER    = feito
+---------------------------------------------------------
+
+
+	  ADICIONAR CONTEUDO DO HEADER :
+
+		- CONFIGURAR AREA =  feito
+		- ADICIONAR FUNDO = feito
+		- ADCIONAR LOGO   = feito
+		- MENU HORIZONTAL = feito
+------------------------------------------------------------
+
+	  	ADICIONAR CONTEUDO DO main :
+
+		- CONFIGURAR AREA     =  FEITO
+		- ADICIONAR FUNDO     =  FEITO
+		- ADCIONAR CONTEUDO   =  feito
+		- ADICIONAR BOTAO     =  feito
+------------------------------------------------------------
+
+	  	ADICIONAR CONTEUDO DO aside :
+
+		- CONFIGURAR AREA     =  FEITO
+		- ADICIONAR FUNDO     =  FEITO
+		- CRIAR 3 PRODUTOS   =  feito
+		- CONFIGURAR GRID     =  feito
+------------------------------------------------------------
+
+	  	ADICIONAR CONTEUDO DO FOOTER :
+
+		- CONFIGURAR AREA     =  feito
+		- ADICIONAR FUNDO     =  feito
+		- ADCIONAR CONTEUDO   =  feito
+		
+------------------------------------------------------------
+
+	  	PERSONALIZAR COM CARDS :
+
+		- CRIAR O CARD     		=  
+		- ESTELILIZAR    	 	=  
+		- CONFIGURAR PARA MOBA DESK     =  
+		
+------------------------------------------------------
